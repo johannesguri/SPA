@@ -8,11 +8,10 @@
       <p class="card-text"><small class="text-muted">{{hero.aparicion}}</small></p>
     </div>
     
-    <a [routerLink]="['heroe',i]" class="btn btn-default" role="button">Ver mas...</a>
-    <!--
-    <button type="button" class="btn btn-outline-primary btn-block" [routerLink]="['heroe']">
+    
+    <button (click)="verHeroe(i)" type="button" class="btn btn-outline-primary btn-block" [routerLink]="['/heroe',i]">
       Ver mas..
     </button>
-    -->  
+    
   </div>
 </div>
