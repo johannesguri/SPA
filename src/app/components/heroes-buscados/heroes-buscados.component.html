@@ -1,4 +1,14 @@
-<h1>Heroes <small>Marvel y DC</small></h1>
+<h1>Entrados por: <small>{{termino}}</small></h1>
+<hr>
+
+<div *ngIf="newArrayHeroesBuscados == 0" class="row">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      No existen resultados con el termino: {{termino}}
+    </div>
+  </div>
+  
+</div>
 <div class="card-columns">
   <div *ngFor="let hero of newArrayHeroesBuscados" class="card animated fadeIn fast">
     <img class="card-img-top img-fluid" [src]="hero.img" [alt]="hero.img">
